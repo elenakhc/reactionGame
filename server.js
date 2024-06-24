@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let data = [99999];
 let fastest = 9999;
-let root = path.resolve(__dirname) + '/public/';
+let root = path.resolve(__dirname + '/public/');
 app.get('/', (req, res) => {
     res.sendFile('block.html', { 'root': root });
 });
